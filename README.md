@@ -6,3 +6,6 @@ Lab software's Project
 
 # Class diagram
 ![Class diagram](https://uupload.ir/files/q77i_class_diagram2.jpeg)
+
+# Database diagram
+![Database diagram](https://uupload.ir/files/l7m_datebase_diagram2.jpeg)
