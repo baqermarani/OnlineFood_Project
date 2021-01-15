@@ -9,3 +9,6 @@ Lab software's Project
 
 # Database diagram
 ![Database diagram](https://uupload.ir/files/l7m_datebase_diagram2.jpeg)
+
+# Usecase diagram
+![Usecase diagram](https://uupload.ir/files/bui7_usecase_diagram2.jpeg)
