@@ -17,5 +17,5 @@ Lab software's Project
 # Developers
 ID | First & Last Name
 ------------ | -------------
-@baqermarani | Baqer Marani
+@baqermarani | Mohamadbaqer Marani
 @mohamadreza1999 | Mohamadreza Mastalizade
