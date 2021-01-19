@@ -12,3 +12,10 @@ Lab software's Project
 
 # Usecase diagram
 ![Usecase diagram](https://uupload.ir/files/bui7_usecase_diagram2.jpeg)
+
+
+# Developers
+ID | First & Last Name
+------------ | -------------
+@baqermarani | Baqer Marani
+@mohamadreza1999 | Mohamadreza Mastalizade
