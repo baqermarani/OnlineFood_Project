@@ -17,5 +17,5 @@ Lab software's Project
 # Developers
 ID | First & Last Name
 ------------ | -------------
-[@baqermarani](github.com/baqermarani) | Mohamadbaqer Marani
-[@mohamadreza1999](github.com/mohamadreza1999) | Mohamadreza Mastalizade
+[@baqermarani] | Mohamadbaqer Marani
+[@mohamadreza1999] | Mohamadreza Mastalizade
