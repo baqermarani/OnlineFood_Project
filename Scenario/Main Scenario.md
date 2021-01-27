@@ -2,7 +2,7 @@
 This is a site that provides users with a list of their daily food every day.
 By viewing the daily menu, people can order food for all their meals and prepare it in the shortest possible time.
 
-## Admin
+## Manager
 The administrator controls the site. In fact, it regulates the products inside the site in terms of inventory and prices. He also checks users and their shopping lists so that customers do not have any problems in shopping.
 
 ## Customer
