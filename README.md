@@ -15,7 +15,7 @@ In this section, we will analyze and design the project
 
 *  [UseCase Diagram](Diagrams/UseCase Diagram.md)
 
-*  [Class Diagram](Diagrams/ClassDiagram.md)
+*  [Class Diagram](Diagrams/Class Diagram.md)
 
 *  [Database Diagram](Diagrams/Database.md)
 
