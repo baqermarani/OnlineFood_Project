@@ -19,7 +19,7 @@ In this section, we will analyze and design the project
 
 *  [UseCase Diagram](Diagrams/Usecase_Diagram.md)
 
-*  [Scenario-customer](Scenario/Main_Scenario.md)
+*  [Scenario](Scenario/Main_Scenario.md)
 
 ## Project development phases
 1. Website design
