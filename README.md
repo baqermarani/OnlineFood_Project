@@ -11,15 +11,15 @@ This project provides online food shopping !
 ## Analysis and design of the project
 In this section, we will analyze and design the project
 
-*  [Activity Diagram](Diagrams/Activity.md)
+*  [Activity Diagram](Diagrams/Activity_Diagram.md)
 
-*  [UseCase Diagram](Diagrams/UseCase Diagram.md)
+*  [Class Diagram](Diagrams/Class_Diagram.md)
 
-*  [Class Diagram](Diagrams/Class Diagram.md)
+*  [Database Diagram](Diagrams/Database_Diagram.md)
 
-*  [Database Diagram](Diagrams/Database.md)
+*  [UseCase Diagram](Diagrams/Usecase_Diagram.md)
 
-*  [Scenario-customer](Scenario/Main Scenario.md)
+*  [Scenario-customer](Scenario/Main_Scenario.md)
 
 ## Project development phases
 1. Website design
