@@ -1,0 +1,64 @@
+﻿@model CoffeeShop.Models.Product
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+
+        <h2 class="dl-horizontal">پاک کردن</h2>
+
+        <h3 class="dl-horizontal">آیا برای حذف کردن مطمئن هستید؟</h3>
+        <div>
+            <h4 class="dl-horizontal dl-horizontal">محصولات</h4>
+            <hr />
+            <dl class="dl-horizontal dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Group.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Group.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Image)
+
+                </dt>
+
+                <dd>
+                    <img class="img-responsive  img-rounded" style="width:100px; height:100px;" src="../../@Model.Image" />
+
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color dl-horizontal">
+                    <input type="submit" value="حذف" class="btn btn-default" /> |
+
+                    @Html.ActionLink("برگشت به فهرست", "Index")
+
+                </div>
+            }
+        </div>
+    

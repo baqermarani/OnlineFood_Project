@@ -1,0 +1,206 @@
+﻿
+@font-face {
+    font-family: "Shabnam";
+    src: url("../fonts/Shabnam/Shabnam.eot");
+    src: url("../fonts/Shabnam/Shabnam.eot?#iefix") format("embedded-opentype"), url("../fonts/Shabnam/Shabnam.woff") format("woff"), url("../fonts/Shabnam/Shabnam.ttf") format('truetype');
+}
+
+
+body {
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.group_div {
+    text-align: right;
+}
+
+.tbl_group tr th {
+    text-align: right !important
+}
+
+.new-pro-co {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    font-family: Shabnam !important;
+}
+
+    .new-pro-co label {
+        display: block;
+    }
+
+    .new-pro-co image {
+        border-radius: 5px;
+    }
+
+.new-pro-title {
+    text-align: center;
+    font-family: Shabnam;
+}
+
+    .new-pro-title h2 {
+        color: #b94a48 !important
+    }
+
+.group-nav {
+    font-family: Shabnam;
+    float: right;
+}
+
+
+
+.headers {
+    background-color: #ffffff;
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+}
+
+.head_div {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.head_div_right {
+    width: 700px;
+    height: 100%;
+    float: right;
+}
+
+.head_div_left {
+    width: 500px;
+    height: 100%;
+    float: left;
+}
+
+.wellcome {
+    font-family: Shabnam;
+    color: #970808;
+    float: right;
+    width: 100px;
+    height: 20px;
+    direction: rtl;
+    padding-right: 10px;
+    padding-top: 25px;
+}
+
+#pdate {
+    color: #970808;
+    font-family: Shabnam;
+    float: right;
+    width: 100px;
+    height: 20px;
+    direction: rtl;
+    padding-top: 25px;
+}
+
+.img-logo {
+    top: 0px;
+    left: 0px;
+    position: relative;
+    border-radius: 200px;
+}
+
+.grp-div {
+    margin-top: 10px;
+    width: 700px;
+    height: 100%;
+}
+
+
+.new-pro-co .product-link {
+    text-align: center;
+    padding: 15px;
+    color: #ffffff;
+    background-color: #970808;
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+.product-link:hover {
+    text-decoration: none;
+}
+
+
+.dl-horizontal {
+    font-family: Shabnam;
+}
+
+.details-wrapper {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: Shabnam;
+}
+
+.div-details {
+    text-align: right;
+}
+
+.grop-c {
+    text-align: center;
+}
+
+.submit_sc_wrapper {
+    padding-top: 20px !important;
+}
+
+.submit_shoppingcart {
+    padding: 15px;
+    background-color: #177109;
+    color: #ffffff;
+    font-family: Shabnam;
+    border-radius: 5px;
+}
+
+    .submit_shoppingcart:hover {
+        background-color: #ffffff;
+        color: #177109;
+        font-family: Shabnam;
+        border: 2px solid #177109;
+        text-decoration: none;
+    }
+
+
+

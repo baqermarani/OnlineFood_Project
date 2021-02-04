@@ -1,0 +1,40 @@
+﻿@model IEnumerable<CoffeeShop.Models.Group>
+
+@{
+   
+    ViewBag.Title = "Index";
+}
+
+
+
+            <h2>Index</h2>
+
+            <p>
+                @Html.ActionLink("ایجاد گروه جدید", "Create")
+            </p>
+            <table class="table tbl_group">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.ActionLink("ویرایش", "Edit", new { id = item.ID }) |
+                            @Html.ActionLink("جزئیات", "Details", new { id = item.ID }) |
+                            @Html.ActionLink("پاک کردن", "Delete", new { id = item.ID })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+
+        
