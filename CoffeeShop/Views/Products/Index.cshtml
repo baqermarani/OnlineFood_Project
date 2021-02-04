@@ -1,0 +1,78 @@
+﻿
+@using PagedList.Mvc; 
+@using PagedList;
+@model PagedList.IPagedList<CoffeeShop.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+
+    <div class="col-sm-8">
+        @*نشان دادن محصولات*@
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-4">
+
+                    <div class="new-pro-co">
+
+                        <a href="@Url.Action("Details","Products",new {group = item.GroupId,Id =item.ID,productname = item.Name.Replace(" ","-")})"> <img src="@item.Image" class="img-responsive" alt="@item.Name" /></a>
+
+                        <br />
+                        <label dir="rtl">  @item.Name</label>
+                        <label dir="rtl"> @item.Price تومان</label>
+                        <a href="@Url.Action("Details","Products",new { group = item.GroupId,Id = item.ID, productname = item.Name.Replace(" ", "-") })" class="product-link" style=" text-align: center;padding: 5px;color: #ffffff;background-color: #970808;display: block;width: 50%;height: 30px;"> دیدن جزئیات </a>
+                        <br />
+                        <a href="@Url.Action("Edit","Products",new { group = item.GroupId,Id = item.ID, productname = item.Name.Replace(" ", "-") })" class="product-link" style=" text-align: center;padding: 5px;color: #ffffff;background-color: #b5ad18;display: block;width: 50%;height: 30px;"> ویرایش کردن</a>
+                        <br />
+                        <a href="@Url.Action("Delete","Products",new { group = item.GroupId,Id = item.ID, productname = item.Name.Replace(" ", "-") })" class="product-link" style=" text-align: center;padding: 5px;color: #ffffff;background-color: #ff0000;display: block;width: 50%;height: 30px;">حذف کردن</a>
+                        <br />
+                        <a href="@Url.Action("Create","Products",new { group = item.GroupId,Id = item.ID, productname = item.Name.Replace(" ", "-") })" class="product-link" style=" text-align: center;padding: 5px;color: #ffffff;background-color: #0a8e15;display: block;width: 50%;height: 30px;">محصول جدید</a>
+
+
+
+                    </div>
+
+                </div>
+            }
+
+           
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+               @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="col-sm-4">
+        @*نشان دادن فیلترها*@
+        <div class="row">
+            <div class="col-sm-12 ">
+
+                <div class="dropdown dl-horizontal group-nav">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                       مرتب کردن بر اساس قیمت
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu  dl-horizontal" aria-labelledby="dropdownMenu1">
+                        <li style="text-align:center"><a href="@Url.Action("Index","Products",new{ sortoption = "1"})">صعودی</a></li>
+                        <li style="text-align:center"><a href="@Url.Action("Index","Products",new{ sortoption = "2"})">نزولی</a></li>
+                       
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+

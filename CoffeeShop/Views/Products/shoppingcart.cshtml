@@ -1,0 +1,84 @@
+﻿@model IEnumerable<CoffeeShop.Models.shoppingcartViewModels>
+
+@{ 
+    ViewBag.Title = "shoppingcart";
+}
+
+
+        <h2 class="dl-horizontal">سبد خرید</h2>
+
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
+            <tr class="dl-horizontal">
+                
+                <th>
+                    @Html.DisplayNameFor(model => model.quantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product.Price)
+                </th>
+
+
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr class="dl-horizontal">
+                   
+                    <td>
+                        @Html.DisplayFor(modelItem => item.quantity)   
+                        <a href="@Url.Action("increasequantity","Products",new { pid =item.Product.ID})" style="text-align: center;padding: 3px;color: #ffffff;background-color:#067e2d;display: block;width:20%;height:20px;text-decoration: none; border-radius:20px;">+</a>  
+                        <br/>
+                        <a href="@Url.Action("decreasequantity","Products",new { pid =item.Product.ID})" style="text-align: center;padding: 3px;color: #ffffff;background-color:#067e2d;display: block;width:20%;height:20px;text-decoration: none; border-radius:20px;">-</a>
+
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Product.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Product.Price)
+                    </td>
+                    
+                    <td>
+                      
+                         @Html.ActionLink("حذف از سبد خرید","DeleteItemFromCart", "Products", new { pid = item.Product.ID },null)
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+<div class="row">
+    <div class="col-sm-12   dl-horizontal">
+        <label dir="rtl">مبلغ قابل پرداخت:@ViewBag.totalprice</label>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 submit_sc_wrapper dl-horizontal" >
+        <form method="get" action="~/Products/submit_order">
+            <label>پرداخت آنلاین</label>
+            <input type="radio" name="pay_method" value="online" />
+            <br/>
+
+            <label>پرداخت درب منزل</label>
+            <input type="radio" name="pay_methode" value="cash" />
+            <br/>
+            <input class="submit_shoppingcart"  type="submit" value="ثبت نهایی خرید"/>
+
+        </form>
+   
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <label class="label-danger">@ViewBag.status</label>
+    </div>
+</div>
+  

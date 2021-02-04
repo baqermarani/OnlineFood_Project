@@ -1,0 +1,31 @@
+﻿@model CoffeeShop.Models.Product
+
+@{   
+    ViewBag.Title = "Details";
+}
+
+
+
+
+<div class="row">
+    <div class="col-sm-8 details-wrapper ">
+        <div class="row">
+            <div class="col-sm-4  div-details">
+               @*توضیحات*@
+                <h2 class="dl-horizontal">@Model.Name</h2>
+                <br />
+                <label class="dl-horizontal">@Model.Price تومان</label>
+                <br />
+                <a href="@Url.Action("AddToCart","Products",new { pid = Model.ID})" style="text-align: center;padding: 15px;color: #ffffff;background-color:#067e2d;display: block;width: 100%;height:50px;text-decoration: none;">افزودن به سبد خرید</a>
+                
+              
+                
+
+            </div>
+            <div class="col-sm-4 div-img">
+                <img class="img-responsive  img-rounded" src="../../@Model.Image" />
+                @*عکس محصولات*@
+            </div>
+        </div>
+    </div>
+</div>
