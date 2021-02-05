@@ -1,0 +1,74 @@
+﻿@model IEnumerable<CoffeeShop.Models.Group>
+
+
+
+
+
+    <ul class="nav navbar-nav   group-nav" dir="rtl">
+
+
+        <li><a href="@Url.Action("shoppingcart","Products") ">سبدخرید  @Html.Action("itemcount", "Products")   <img  src="~/Images/shopping_cart.png" /></a></li>
+        
+
+        <li class="dropdown">
+
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                همه ی گروه ها
+                <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu">
+
+
+                <li class="grop-c"><a class="nav-link" href="@Url.Action("Index", "Products", new { group = 1 })">صبحانه</a></li>
+                <li class="grop-c"><a class="nav-link" href="@Url.Action("Index", "Products", new { group =2 })">نوشیدنی</a></li>
+                <li class="grop-c"><a class="nav-link" href="@Url.Action("Index", "Products", new { group = 3 })">بستنی</a></li>
+                <li class="grop-c"><a class="nav-link" href="@Url.Action("Index", "Products", new { group = 4 })">گلاسه</a></li>
+                <li class="grop-c"><a class="nav-link" href="@Url.Action("Index", "Products", new { group = 5 })">پیش غذا</a></li>
+                <li class="grop-c"><a class="nav-link" href="@Url.Action("Index", "Products", new { group = 6 })">ساندویچ</a></li>
+                <li class="grop-c"><a class="nav-link" href="@Url.Action("Index", "Products", new { group = 7 })">پیتزا</a></li>
+                <li class="grop-c"><a class="nav-link" href="@Url.Action("Index", "Products", new { group =8 })">سوخاری</a></li>
+                <li class="grop-c"><a class="nav-link" href="@Url.Action("Index", "Products", new { group =9 })">کیک</a></li>
+
+            </ul>
+        </li>
+
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*@if (Request.IsAuthenticated && User.IsInRole("Admin"))
+    {
+        <li>@Html.ActionLink("RolesAdmin", "Index", "RolesAdmin")</li>
+        <li>@Html.ActionLink("UsersAdmin", "Index", "UsersAdmin")</li>
+    }*@
+
+
+
+
+

@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!-- Side navigation -->
+    <div class="sidenav">
+        <a href="@Url.Action("Index","Groups")">Groups</a>
+        <a href="@Url.Action("Index","Products")"> I Products</a>
+       
+    </div>
+
+<!-- Page content -->
+<div class="main">
+  @RenderBody()
+</div>
