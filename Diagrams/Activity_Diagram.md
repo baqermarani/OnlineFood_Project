@@ -1,4 +1,4 @@
-# Activity diagram
+# Activity Diagram
 
 <details>
   <summary markdown="span">What is Activity Diagram?</summary>
