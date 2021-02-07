@@ -2,10 +2,10 @@
 Lab software's Project
 
 # Software Under The Web
-This project provides online food shopping !
+This project provides online food shopping!
 
 ## Features of this system
-* Providing a platform for communication between the people who want to use Online shapipng 
+* Providing a platform for communication between the people who want to use Online shopping
 * specially online food
 
 ## Analysis and design of the project
