@@ -7,7 +7,7 @@
 
 ![Activity diagram](https://uupload.ir/files/izdd_activity_diagram2.jpeg)
 
-## Amin
+## Admin
 1. register and Login
 2. manage items inventory
 3. manage customer orders
